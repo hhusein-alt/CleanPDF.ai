@@ -1,0 +1,104 @@
+# ============================================
+# 🧹 CleanPDF.ai — Project-specific ignores
+# ============================================
+
+# User uploads and generated output
+uploads/
+outputs/
+*.pdf
+
+# Environment & secrets
+.env
+.env.local
+.env.*.backup
+
+# Log files
+*.log
+logs/
+app.log
+
+# IDE and OS specific
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ============================================
+# 🧠 Python base ignores (original content)
+# ============================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Django / Flask
+instance/
+.webassets-cache
+
+# Jupyter
+.ipynb_checkpoints
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm / VS Code
+.pyre/
+.pytype/
+.mypy_cache/
+.vscode/
+.idea/
+
+# Docs
+/site
+docs/_build/
+
+# Other tools
+.pdm.toml
+.pdm-python
+.pdm-build/

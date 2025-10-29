@@ -1,0 +1,31 @@
+# FastAPI framework
+fastapi
+
+# ASGI server
+uvicorn[standard]
+
+# File uploads
+python-multipart
+aiofiles
+
+# Templating
+jinja2
+
+# PDF processing
+PyMuPDF
+
+# Security / filename sanitization
+Werkzeug
+
+# Optional: PDF compression & conversion
+pikepdf          # для оптимизации и сжатия PDF
+reportlab        # для генерации PDF, если понадобится
+
+# Optional: HTTP requests for AI API integration
+httpx
+
+# Optional: Environment variables
+python-dotenv
+
+# Optional: Logging enhancements
+loguru
