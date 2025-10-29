@@ -4,6 +4,7 @@ from pathlib import Path
 from fastapi import FastAPI, File, UploadFile, Request
 from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from werkzeug.utils import secure_filename
 from app.services.watermark_detector import WatermarkDetector
@@ -21,7 +22,10 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 app = FastAPI(title="Gamma AI Watermark Remover", version="2.0.0")
 
 # Template configuration
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="app/templates")
+
+# Static files configuration
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
 # Initialize detector and remover
 detector = WatermarkDetector()

@@ -23,3 +23,8 @@
 - Responsive breakpoints for mobile devices (768px)
 - Fixed header with backdrop blur effect
 - Feature cards with icon backgrounds and hover animations
+
+### Fixed
+- Updated FastAPI template directory path from "templates" to "app/templates"
+- Added StaticFiles mount for serving CSS and JavaScript files
+- Imported fastapi.staticfiles.StaticFiles to enable static file serving
