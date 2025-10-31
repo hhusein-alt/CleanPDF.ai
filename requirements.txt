@@ -21,9 +21,6 @@ Werkzeug
 pikepdf          # для оптимизации и сжатия PDF
 reportlab        # для генерации PDF, если понадобится
 
-# Optional: HTTP requests for AI API integration
-httpx
-
 # Optional: Environment variables
 python-dotenv
 
